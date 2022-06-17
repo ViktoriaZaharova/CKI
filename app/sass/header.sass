@@ -1,0 +1,66 @@
+@import "vars"
+
+/*==========  section header ==========*/
+header
+  position: fixed
+  width: 100%
+  z-index: 3
+  left: 0
+  top: 0
+  background: rgba(255, 255, 255, 0.6)
+  backdrop-filter: blur(80px)
+  padding: 33px 0
+  .btn
+    width: fit-content
+
+.logo
+  max-width: 359px
+  @include d-flex
+
+.menu
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 auto
+  li
+    margin: 0 24px 0 0
+    &:last-child
+      margin: 0
+    a
+      color: #000000
+      &:hover
+        color: $accent
+
+.header-box
+  p
+    font-size: 14px
+    color: $accent
+    margin: 0 0 2px
+
+.phone
+  font-size: 20px
+  font-weight: 500
+  color: #000
+  &:hover
+    color: $accent
+
+.list-social
+  display: flex
+  align-items: center
+  margin: 0 52px 0 57px
+  li
+    margin: 0 20px 0 0
+    &:last-child
+      margin: 0
+    a
+      @include d-flex
+
+
+
+/*==========  section header end  ==========*/
+
+
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/

@@ -1,0 +1,208 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  font-weight: normal
+  background: #fff
+  color: #000
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+  width: fit-content
+  &:hover, &:focus
+    text-decoration: none
+
+input, textarea, select
+  outline: none
+  box-shadow: none
+  appearance: none
+  padding: 0
+  box-sizing: border-box
+  font-family: $default-font
+  border: none
+    radius: 0
+  width: 100%
+
+  &::placeholder
+    color: inherit
+
+    &:hover, &:focus
+      outline: none
+      box-shadow: none
+
+
+label
+  display: block
+  width: 100%
+
+button, .btn
+  outline: none
+  transition: .3s ease
+  cursor: pointer
+  box-shadow: none
+  font-family: $default-font
+  padding: 0
+  margin: 0
+  border: none
+    radius: 0
+
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  font-size: 16px
+  font-weight: normal
+  height: 58px
+  border-radius: 5px
+  padding: 10px
+  max-width: 229px
+  width: 100%
+
+.btn-sm
+  height: 45px
+
+.btn-accent
+  color: #fff
+  background: $accent
+
+  &:hover
+    background: $grey
+    color: inherit
+
+.btn-gradient
+  background: linear-gradient(287.84deg, #B42024 5.67%, #DF0006 95.38%)
+  color: #fff
+  box-shadow: 0px 7px 22px rgba(180, 32, 36, 0.2)
+  border-radius: 5px
+  padding: 19px 10px
+  &:hover
+    color: #fff
+    background: linear-gradient(to right, #B42024 5.67%, #DF0006 95.38%)
+  .btn-icon
+    stroke: #ffffff
+
+.btn-border
+  border: 2px solid #B42024
+    radius: 5px
+  color: $accent
+  .svg-icon
+    stroke: $accent
+  &:hover
+    background: $accent
+    color: #fff
+    .btn-icon
+      stroke: #fff
+
+.btn-icon
+  width: 40px
+  height: 24px
+  margin-left: 32px
+
+.svg-icon
+  display: inline-block
+  width: 100%
+  height: 100%
+
+strong, b
+  font-weight: bold
+  display: inline-block
+
+ul, ol
+  padding: 0 0 0 20px
+
+.my-ul
+  list-style: none
+  padding: 0
+
+.container
+  max-width: 1560px
+
+h1
+  font-size: 86px
+  font-weight: 700
+  text-transform: uppercase
+  line-height: 110px
+  width: 100%
+
+h2
+  text-transform: uppercase
+  font-weight: 800
+  font-size: 36px
+  height: 100%
+
+.h2-my
+  font-size: 40px
+
+
+.wrapper
+  padding: 130px 0 0
+  width: 100%
+
+.mb-30
+  margin-bottom: 30px
+
+.mb-37
+  margin-bottom: 37px
+
+
