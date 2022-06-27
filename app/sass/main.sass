@@ -4,6 +4,7 @@
 .home
   margin: 58px 0 118px
   position: relative
+
   &:before
     content: ''
     position: absolute
@@ -17,6 +18,7 @@
 
   .btn
     padding: 0 37px
+
   h1
     margin: 0 0 23px -165px
     position: relative
@@ -30,9 +32,10 @@
   border-radius: 5px
   overflow: hidden
   width: 100%
+
   img
     width: 100%
-    
+
 /*==========  section home end  ==========*/
 
 
@@ -46,9 +49,11 @@
     position: relative
     z-index: 1
     margin: 0 0 77px
+
   .btn
     margin: auto 0 0
     padding: 0 37px
+
   &__content
     width: 100%
     height: 100%
@@ -56,72 +61,232 @@
     display: flex
     flex-direction: column
 
-
-
 /*==========  section announcement end  ==========*/
 
-/*==========  section  ==========*/
 
-/*==========  section end  ==========*/
+/*==========  section who-suit  ==========*/
+.btn-details
+  max-width: 359px
+  width: 100%
+  padding: 0 27px
 
+.select-wrapper
+  display: flex
+  align-items: center
+  margin: 0 0 0 auto
 
+  p
+    max-width: 330px
 
-/*==========  section  ==========*/
+.select
+  max-width: 260px
+  width: 100%
+  border: 2px solid #B7B7B7
+    radius: 5px
+  height: 58px
+  padding: 0 50px 0 32px
+  color: #808080
+  font-family: $default-font
+  background: url("../img/arrow-select.svg") no-repeat calc(100% - 28px) center
+    size: 23px
 
-/*==========  section end  ==========*/
+.or
+  margin: 0 auto
 
-
-/*==========  section  ==========*/
-
-/*==========  section end  ==========*/
-
-
-
-/*==========  section  ==========*/
-
-/*==========  section end  ==========*/
-
-
-
-/*==========  section  ==========*/
-
-/*==========  section end  ==========*/
-
-
-
-/*==========  section  ==========*/
-
-/*==========  section end  ==========*/
-
+/*==========  section who-suit end  ==========*/
 
 
-/*==========  section  ==========*/
+/*==========  section offers  ==========*/
+.offers
+  margin: 140px 0 114px
 
-/*==========  section end  ==========*/
+  h2
+    margin: 0 0 55px
+
+.offer-box
+  width: 100%
+  height: 100%
+  max-height: 396px
+  overflow: hidden
+  position: relative
+  border-radius: 5px
+  color: #fff
+
+  &__img
+    width: 100%
+    height: 100%
+    object-fit: cover
+    position: absolute
+    z-index: -1
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+
+  &__content
+    background: linear-gradient(287.84deg, rgba(180, 32, 36, 0.8) 5.67%, rgba(223, 0, 6, 0.8) 95.38%)
+    border-radius: 5px
+    backdrop-filter: blur(15px)
+    padding: 32px 49px 38px 34px
+    margin: 200px 0 0 auto
+    width: 100%
+    max-width: 309px
+    min-height: 195px
+    display: flex
+    flex-direction: column
+
+  h4
+    text-transform: uppercase
+    margin: 0 0 auto
+    font-size: 20px
+    font-weight: bold
+    line-height: 25px
+
+  .link-white
+    &:hover
+      color: $grey
+
+      .link-icon
+        stroke: $grey
+
+/*==========  section offers end  ==========*/
 
 
 
-/*==========  section  ==========*/
+/*==========  section news  ==========*/
+.news
+  margin: 189px 0 139px
 
-/*==========  section end  ==========*/
+  h2
+    margin: 0 27px 0 0
+
+.news-card
+  &__img
+    width: 100%
+    height: 359px
+    overflow: hidden
+    @include d-flex
+
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+  &__body
+    width: 100%
+    padding: 29px 0 0
+
+  .date
+    color: #B42024
+    font-size: 14px
+
+  &__title
+    margin: 20px 0 31px
+    color: #000000
+    font-size: 18px
+
+    &:hover
+      color: $accent
+
+  .btn
+    width: fit-content
+    padding: 5px 26.5px
+    height: 37px
+    font-size: 14px
+
+/*==========  section news end  ==========*/
 
 
+/*==========  section partners ==========*/
+.partners-slider
+  margin: 40px 0 0
 
-/*==========  section  ==========*/
+  .slide
+    padding: 0 20px
 
-/*==========  section end  ==========*/
+  .slick-list
+    margin: 0 -20px
 
+.partners-slider__item
+  @include d-flex
+  height: 89px
 
+  img
+    max-height: 100%
 
-/*==========  section  ==========*/
+/*==========  section partners end  ==========*/
 
-/*==========  section end  ==========*/
+/*==========  section events ==========*/
+.events
+  margin: 160px 0 170px
 
+  h2
+    margin: 0 39px 0 0
 
-/*==========  section  ==========*/
+.events-slider
+  min-width: 2000px
+  margin: 55px 0 0
 
-/*==========  section end  ==========*/
+  .slide
+    margin: 0 30px 0 0
+    width: 619px
 
+  &-item
+    width: 100%
+    overflow: hidden
+    border-radius: 5px
+    color: #fff
+    padding: 32px 28px 34px
+    position: relative
+    z-index: 1
+
+    &__img
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
+      width: 100%
+      height: 100%
+      object-fit: cover
+      z-index: -1
+
+    &__body
+      width: 100%
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+
+    &__head
+      display: flex
+      align-items: center
+      flex-wrap: wrap
+      margin: 0 0 160px
+      width: 100%
+      font-size: 20px
+      font-weight: 300
+
+    &__title
+      color: #fff
+      text-transform: uppercase
+      margin: 0 0 22px
+      font-size: 24px
+      font-weight: 800
+
+      &:hover
+        color: $accent
+
+.location
+  display: flex
+  align-items: center
+  margin: 0 24px
+
+.location-icon
+  fill: #fff
+  width: 11px
+  height: 15px
+  margin: 0 12px 0 0
+  @include d-flex
+
+/*==========  section events end  ==========*/
 
 
 /*==========  section testing ==========*/
@@ -136,12 +301,13 @@
     position: absolute
     top: 50%
     left: 50%
-    transform: translate(-50%,-50%)
+    transform: translate(-50%, -50%)
     background: url("../img/test-bg.svg") no-repeat center
       size: contain
     z-index: -1
     width: 1794px
     height: 556px
+
   &:before
     content: ''
     position: absolute
@@ -152,16 +318,19 @@
     background: url("../img/decor-logo-red.svg") no-repeat center
       size: 100%
     z-index: 1
+
   h2
     font-size: 92px
     font-weight: 200
     position: relative
     z-index: 1
+
     strong
       display: block
       font-size: 86px
       font-weight: bold
       white-space: nowrap
+
   h3
     margin: 14px 0 40px
     font-size: 31px
@@ -171,6 +340,8 @@
 .testing-content
   margin: 32px 0 0
   min-width: 547px
+  z-index: 2
+  position: relative
 
 .testing-image
   border-radius: 5px
@@ -180,7 +351,131 @@
   margin: 0 0 0 auto
   z-index: -1
   @include d-flex
+
   img
     width: 100%
 
 /*==========  section testing end  ==========*/
+
+
+/*==========  section contacts ==========*/
+.contacts-page
+  margin: 0 0 119px
+
+  h1
+    margin: 0 0 69px
+
+.map
+  border-radius: 5px
+  overflow: hidden
+  height: 623px
+  width: 100%
+
+  iframe
+    width: 100%
+    height: 100%
+
+.contacts-box
+  margin: 0 0 40px
+  font-weight: 800
+  text-transform: uppercase
+  color: $accent
+
+  p
+    font-size: 24px
+
+  a
+    font-size: 64px
+    color: $accent
+
+    &:hover
+      color: #000
+
+.mail
+  color: $accent
+  text-transform: uppercase
+  margin: 0 0 60px
+  font-size: 24px
+  font-weight: 800
+  &:hover
+    color: #000
+
+.schedule
+  font-size: 24px
+  p
+    color: $accent
+    text-transform: uppercase
+  span
+    font-size: 20px
+
+.contacts-box-line
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+.social-box
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 0 0 57px
+  p
+    margin: 0 34px 0 0
+    font-size: 20px
+  .list-social
+    margin: 0
+    li
+      margin: 0 32px 0 0
+      &:last-child
+        margin: 0
+
+.news-page
+  margin: 0 0 110px
+/*==========  section contacts end  ==========*/
+
+
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+

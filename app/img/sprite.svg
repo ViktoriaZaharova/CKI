@@ -9,8 +9,12 @@
         <path d="M12 1L2 11L12 21" stroke-width="2"/>
     </symbol>
 
-    <symbol id="arrow-right" viewBox="0 0 13 22">
+    <symbol id="arrow-next" viewBox="0 0 13 22">
         <path d="M1 1L11 11L1 21" stroke-width="2"/>
+    </symbol>
+
+    <symbol id="location" viewBox="0 0 11 15">
+        <path d="M11 5.22727C11 8.11422 5.5 15 5.5 15C5.5 15 0 8.11422 0 5.22727C0 2.34033 2.46243 0 5.5 0C8.53757 0 11 2.34033 11 5.22727Z"/>
     </symbol>
 
 </svg>

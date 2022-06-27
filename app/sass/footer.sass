@@ -48,6 +48,56 @@ footer
 
 
 
-/*==========  section  ==========*/
+/*==========  section modal ==========*/
+.modal-dialog
+  max-width: 500px
 
-/*==========  section end  ==========*/
+.modal-content
+  border: none
+    radius: 10px
+  padding: 30px
+
+.modal-header
+  padding: 0
+  flex-wrap: wrap
+  border: none
+  margin: 0 0 20px
+  .close
+    padding: 0
+    margin: 0
+    position: relative
+    width: 24px
+    height: 24px
+    cursor: pointer
+    opacity: 1
+    top: 0
+    right: 0
+    &:before, &:after
+      content: ''
+      position: absolute
+      left: 12px
+      top: 0
+      width: 2px
+      height: 100%
+      background: $accent
+      border-radius: 2px
+    &:before
+      transform: rotate(45deg)
+    &:after
+      transform: rotate(135deg)
+
+.modal-title
+  font-weight: bold
+  font-size: 24px
+
+.modal-body
+  padding: 0
+
+.form
+  width: 100%
+  max-width: 300px
+  margin: 0 auto
+  button
+    margin: 0 auto
+
+/*==========  section modal end  ==========*/
