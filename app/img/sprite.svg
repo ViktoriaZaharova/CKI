@@ -5,6 +5,11 @@
               stroke-miterlimit="10"/>
     </symbol>
 
+    <symbol id="arrow-left" viewBox="0 0 43 28">
+        <path d="M14.2024 0.999998L2 14M2 14L14.2024 27M2 14L43 14" stroke-width="2"
+              stroke-miterlimit="10"/>
+    </symbol>
+
     <symbol id="arrow-prev" viewBox="0 0 13 22">
         <path d="M12 1L2 11L12 21" stroke-width="2"/>
     </symbol>

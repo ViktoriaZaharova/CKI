@@ -10,7 +10,15 @@
   .social-box {
     margin: 0 0 0 auto; }
   .contacts-box a {
-    font-size: 50px; } }
+    font-size: 50px; }
+  .info-event-item {
+    margin: 0 30px 0 0; }
+  .info-event {
+    padding: 14px 20px; }
+  h1 {
+    font-size: 76px; }
+  .representative-box__tel {
+    margin: 0 auto; } }
 
 @media only screen and (max-width: 1380px) {
   .logo {
@@ -32,7 +40,29 @@
     margin: 0 0 40px; }
   .social-box {
     width: 100%;
-    margin: 20px 0 0; } }
+    margin: 20px 0 0; }
+  .article h1 {
+    width: 100%;
+    margin: 0 0 20px;
+    max-width: none; }
+  .info-event {
+    margin: 0 30px 0 0; }
+  .industry-page h1 {
+    font-size: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .industry-page h1 strong {
+      margin: 0 0 0 auto; }
+  .industry-box {
+    padding: 0; }
+    .industry-box__content {
+      font-size: 30px;
+      line-height: normal; } }
 
 @media only screen and (max-width: 1300px) {
   .logo {
@@ -53,7 +83,34 @@
     width: 100%;
     margin: 0 0 20px; }
   .select-wrapper {
-    margin: 0; } }
+    margin: 0; }
+  .support-box {
+    margin: 0 0 50px; }
+    .support-box h3 {
+      font-size: 30px;
+      min-height: 90px;
+      margin: 0 0 30px -90px; }
+    .support-box .text {
+      padding: 0;
+      margin: 0 0 20px; }
+    .support-box .link {
+      margin: auto 0 0; }
+  .quote {
+    padding: 20px;
+    font-size: 24px; }
+  .mb-70 {
+    margin-bottom: 40px; }
+  .helper h2 {
+    margin: 0 0 30px; }
+  .representative-box__content {
+    padding: 0 0 0 10px; }
+  .function-box__image {
+    max-width: 350px; }
+  .function-box__text {
+    width: calc(100% - 350px);
+    padding: 20px; }
+  .nav-tabs .nav-link {
+    font-size: 20px; } }
 
 @media only screen and (max-width: 1200px) {
   footer {
@@ -77,7 +134,7 @@
   .btn-burger {
     display: block; }
   h1 {
-    font-size: 70px;
+    font-size: 65px;
     line-height: normal; }
   .home-content {
     margin: 30px 0 0; }
@@ -107,7 +164,31 @@
   .mb-90 {
     margin-bottom: 40px; }
   .mb-50 {
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+  .representative-box__image {
+    width: 140px; }
+  .representative-box__content {
+    width: calc(100% - 140px); }
+  .nav-tabs {
+    max-width: 300px; }
+  .nav-tabs .nav-link {
+    font-size: 16px; }
+  .tab-content {
+    width: calc(100% - 300px); }
+  .function h2 {
+    margin: 0 0 30px; }
+  .industry-item .box-text {
+    margin: 0 0 20px; }
+  .heritage {
+    margin: 50px 0 80px; }
+  .industry-section .or {
+    margin: 0 10px; }
+  .industry-section .select-wrapper p {
+    font-size: 18px; }
+  .industry-page {
+    margin: 0 0 60px; }
+  .who-suit-slider {
+    margin: 50px 0 0; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -132,7 +213,85 @@
     margin: 0 0 50px; }
   .map {
     margin: 40px 0 0;
-    height: 400px; } }
+    height: 400px; }
+  .text {
+    font-size: 18px;
+    line-height: normal; }
+  .info-event {
+    font-size: 18px; }
+  .btn-registration {
+    max-width: none;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 10px 30px; }
+  .datepicker {
+    margin: 30px auto 0; }
+  .support-box h3 {
+    margin: 0 0 30px;
+    max-width: none;
+    width: 100%;
+    min-height: auto;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 15px; }
+  .support-box__content {
+    padding: 20px 0 0; }
+  .support-box .text {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: none; }
+  .support-page {
+    margin: 0 0 100px; }
+  .helper {
+    margin: 40px 0 60px; }
+  .text-description {
+    max-width: none; }
+  .quote {
+    font-size: 20px;
+    padding: 15px;
+    line-height: normal; }
+  .mb-70 {
+    margin-bottom: 30px; }
+  .helper .article-image {
+    margin: 30px 0 0; }
+  .representatives {
+    margin: 50px 0 70px; }
+    .representatives h2 {
+      margin: 0 0 30px; }
+  .direction-page {
+    margin: 0 0 50px; }
+    .direction-page h1 {
+      margin: 0 0 20px; }
+  .about-image {
+    margin: 30px auto 0;
+    height: auto; }
+  .nav-tabs {
+    max-width: none; }
+    .nav-tabs .nav-link {
+      width: 50%;
+      padding: 10px 10px 10px 50px;
+      min-height: 76px; }
+      .nav-tabs .nav-link:before {
+        width: 40px;
+        background-size: cover; }
+  .tab-content {
+    width: 100%; }
+  .function-box__image {
+    height: auto; }
+  .team {
+    margin: 50px 0 80px; }
+  .industry-page h1 {
+    font-size: 80px; }
+  .industry-box {
+    margin: 20px auto 0; }
+    .industry-box__image {
+      max-width: 400px;
+      height: 450px; }
+    .industry-box__content {
+      width: calc(100% - 400px); }
+  .industry-section .select-wrapper {
+    margin: 0 0 20px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -155,7 +314,7 @@
     margin: 0 0 30px;
     min-width: auto; }
   .announcement-box__content {
-    padding: 20px 0; }
+    padding: 20px 0 0; }
   .offer-box__content {
     padding: 30px; }
   .slider-nav {
@@ -173,7 +332,37 @@
   .footer-box p {
     font-size: 30px; }
   footer .phone {
-    font-size: 30px; } }
+    font-size: 30px; }
+  .events-page h1 {
+    margin: 0 0 20px; }
+  .datepicker .ui-widget.ui-widget-content {
+    padding: 15px; }
+  .ui-datepicker th, .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    font-size: 15px; }
+  .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    width: 30px;
+    height: 30px; }
+  .ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year {
+    font-size: 15px;
+    padding: 0 15px; }
+  .ui-datepicker .ui-datepicker-header {
+    padding: 0 0 10px; }
+  .about h1 {
+    margin: 0 0 20px; }
+  .industry-box__content {
+    font-size: 24px;
+    width: 100%;
+    margin: 20px 0 0; }
+  .industry-box__image {
+    max-width: none;
+    width: 100%;
+    height: 400px; }
+  .industry-page h1 {
+    font-size: 60px; }
+  .who-suit-slider {
+    margin: 40px 0 0; }
+  .who-suit-box__item {
+    font-size: 20px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
@@ -235,10 +424,145 @@
   .contacts-box a {
     font-size: 30px; }
   .mb-90 {
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+  .mb-50 {
+    margin-bottom: 30px; }
+  .mb-40 {
+    margin-bottom: 20px; }
+  .article h1 {
+    font-size: 30px; }
+  .info-event {
+    width: 100%;
+    margin: 0 0 10px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+  .text {
+    line-height: 24px;
+    font-size: 15px; }
+    .text p {
+      margin: 0 0 20px; }
+  .support-page {
+    margin: 0 0 60px; }
+  .quote {
+    font-size: 17px;
+    line-height: 26px; }
+  .representative-box__image {
+    margin: 0 auto; }
+  .representative-box__content {
+    margin: 10px 0 0;
+    padding: 0;
+    width: 100%;
+    height: auto; }
+  .representative-box h4 {
+    margin: 0 auto 10px;
+    width: 100%; }
+  .representative-box__tel {
+    margin: 0 auto 0 0; }
+  .representative-box__footer p {
+    margin: 0 0 5px;
+    width: 100%; }
+  .btn-toggle {
+    margin: 0 auto; }
+  .function-box__image {
+    width: 100%;
+    height: auto;
+    max-width: 100%; }
+  .function-box__text {
+    width: 100%;
+    padding: 10px; }
+  .nav-tabs .nav-link {
+    width: 100%;
+    min-height: 60px; }
+  .slick-arrow-my {
+    width: 30px;
+    height: 20px; }
+  .team-slider {
+    min-width: auto; }
+    .team-slider .slide {
+      width: 100%;
+      margin: 0; }
+  .industry-page {
+    margin: 0 0 50px; }
+    .industry-page h1 {
+      font-size: 40px; }
+  .industry-box__content {
+    font-size: 20px; }
+  .who-suit-box__item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%; }
+  .who-suit-box {
+    width: 100%; }
+  .who-suit-box__item-text {
+    position: relative;
+    width: 100%;
+    margin: 20px 0 0;
+    min-width: auto;
+    max-width: none;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 0;
+    font-size: 18px; }
+  .who-suit-slider {
+    min-width: auto; }
+    .who-suit-slider .slide {
+      margin: 0; }
+  .who-suit-box__item-img {
+    width: 100%;
+    max-width: none;
+    border-radius: 20px; }
+    .who-suit-box__item-img:before {
+      display: none; }
+  .who-suit-box__item1 .who-suit-box__item-text, .who-suit-box__item2 .who-suit-box__item-text, .who-suit-box__item3 .who-suit-box__item-text, .who-suit-box__item4 .who-suit-box__item-text, .who-suit-box__item5 .who-suit-box__item-text, .who-suit-box__item6 .who-suit-box__item-text {
+    margin: 20px 0 0;
+    max-width: none;
+    min-width: auto;
+    width: 100%;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 0; }
+  .who-suit-box__item1 .who-suit-box__item-img, .who-suit-box__item3 .who-suit-box__item-img, .who-suit-box__item4 .who-suit-box__item-img, .who-suit-box__item5 .who-suit-box__item-img, .who-suit-box__item6 .who-suit-box__item-img {
+    width: 100%;
+    height: 250px; }
+  .who-suit-box__item5 {
+    margin: 0; }
+  .who-suit-box__item2 {
+    display: none; } }
 
 @media only screen and (max-width: 480px) {
-  /**/ }
+  .info-event {
+    padding: 14px; }
+  .info-event-item {
+    width: 100%;
+    margin: 0 0 10px; }
+  .article h1 {
+    font-size: 26px; }
+  h1 {
+    font-size: 30px; }
+  h2 {
+    font-size: 22px; }
+  .industry-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .industry-item__image {
+      width: 100%;
+      height: auto;
+      margin: 0 auto; }
+    .industry-item__content {
+      width: 100%;
+      padding: 20px 0 0; }
+    .industry-item h4 {
+      margin: 0 0 15px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px) {

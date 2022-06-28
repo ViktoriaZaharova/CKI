@@ -263,6 +263,9 @@ h2 {
 .mb-22 {
   margin-bottom: 22px; }
 
+.mb-25 {
+  margin-bottom: 25px; }
+
 .mb-30 {
   margin-bottom: 30px; }
 
@@ -272,8 +275,14 @@ h2 {
 .mb-37 {
   margin-bottom: 37px; }
 
+.mb-40 {
+  margin-bottom: 40px; }
+
 .mb-50 {
   margin-bottom: 50px; }
+
+.mb-70 {
+  margin-bottom: 70px; }
 
 .mb-90 {
   margin-bottom: 90px; }
@@ -315,6 +324,10 @@ h2 {
 
 .slick-next {
   margin-left: 56px; }
+
+.slick-arrow-my {
+  border: none;
+  padding: 0; }
 
 .slick-dots {
   position: relative;
@@ -404,6 +417,14 @@ h2 {
     .breadcrumb a:hover {
       color: #B42024; }
 
+.breadcrumb-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
 .breadcrumb-item + .breadcrumb-item {
   padding: 0; }
 
@@ -414,3 +435,6 @@ h2 {
   margin: 0 5px;
   padding: 0;
   color: #D0D0D0; }
+
+.btn-toggle {
+  margin: 32px auto 0; }

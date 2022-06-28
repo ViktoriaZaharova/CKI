@@ -80,6 +80,7 @@
 
 .select
   max-width: 260px
+  min-width: 260px
   width: 100%
   border: 2px solid #B7B7B7
     radius: 5px
@@ -92,6 +93,136 @@
 
 .or
   margin: 0 auto
+
+.who-suit-slider
+  margin: 105px 0 0
+  min-width: 2000px
+  .slide
+    margin: 0 50px 0 0
+    height: auto
+  .slick-track
+    display: flex
+    align-items: stretch
+
+.who-suit-box
+  width: fit-content
+  height: 100%
+  display: flex
+  flex-direction: column
+
+.who-suit-box__item
+  text-transform: uppercase
+  position: relative
+  margin: 0 0 36px
+  font-size: 24px
+  display: flex
+  align-items: flex-start
+  width: 100%
+  &-img
+    border-radius: 30px
+    overflow: hidden
+    position: relative
+    @include d-flex
+    &:before
+      content: ''
+      position: absolute
+      background: #fff
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &-text
+    max-width: 344px
+    width: 100%
+    position: relative
+    z-index: 1
+
+
+.who-suit-box__item1
+  .who-suit-box__item-img
+    height: 204px
+    width: 352px
+  .who-suit-box__item-text
+    margin: 23px 0 0 -106px
+
+.who-suit-box__item2
+  flex-direction: row-reverse
+  align-items: center
+  .who-suit-box__item-text
+    max-width: 371px
+    margin: 0 -220px 0 0
+  .who-suit-box__item-img
+    width: 437px
+    height: 180px
+    &:before
+      right: -1px
+      bottom: -1px
+      clip-path: polygon(100% 0, 0% 100%, 100% 100%)
+      width: 110px
+      height: 110px
+
+.who-suit-box__item3
+  .who-suit-box__item-img
+    width: 225px
+    height: 420px
+    &:before
+      height: 100%
+      width: 144px
+      right: -1px
+      top: 0
+      clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 100% 50%, 0% 0%)
+  .who-suit-box__item-text
+    position: absolute
+    bottom: 0
+    max-width: 364px
+    width: 364px
+    left: 63px
+
+.who-suit-box__item4
+  .who-suit-box__item-img
+    width: 359px
+    height: 313px
+    &:before
+      width: 208px
+      height: 313px
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 98% 100%)
+      right: -1px
+      top: -1px
+  .who-suit-box__item-text
+    position: absolute
+    top: 18px
+    left: 190px
+    max-width: 430px
+    min-width: 430px
+
+.who-suit-box__item5
+  flex-direction: row-reverse
+  margin: auto 0 0
+  .who-suit-box__item-img
+    width: 245px
+    height: 232px
+    &:before
+      clip-path: polygon(0 0, 0% 100%, 100% 100%)
+      width: 160px
+      height: 100%
+      left: -1px
+      bottom: -1px
+  .who-suit-box__item-text
+    position: absolute
+    bottom: 0
+    right: 0
+    min-width: 324px
+    max-width: 324px
+
+.who-suit-box__item6
+  flex-direction: column
+
+  .who-suit-box__item-img
+    width: 352px
+    height: 204px
+  .who-suit-box__item-text
+    width: 100%
+    margin: 89px 0 0
 
 /*==========  section who-suit end  ==========*/
 
@@ -154,7 +285,7 @@
 
 /*==========  section news  ==========*/
 .news
-  margin: 189px 0 139px
+  margin: 149px 0 139px
 
   h2
     margin: 0 27px 0 0
@@ -397,14 +528,17 @@
   margin: 0 0 60px
   font-size: 24px
   font-weight: 800
+
   &:hover
     color: #000
 
 .schedule
   font-size: 24px
+
   p
     color: $accent
     text-transform: uppercase
+
   span
     font-size: 20px
 
@@ -418,13 +552,17 @@
   align-items: center
   flex-wrap: wrap
   margin: 0 0 0 57px
+
   p
     margin: 0 34px 0 0
     font-size: 20px
+
   .list-social
     margin: 0
+
     li
       margin: 0 32px 0 0
+
       &:last-child
         margin: 0
 
@@ -434,45 +572,614 @@
 
 
 
-/*==========  section  ==========*/
+/*==========  section article ==========*/
+.article
+  h1
+    font-size: 40px
+    line-height: normal
 
-/*==========  section end  ==========*/
+.article-image
+  width: 100%
+  border-radius: 5px
+  position: relative
+  overflow: hidden
+  @include d-flex
 
-
-
-/*==========  section  ==========*/
-
-/*==========  section end  ==========*/
-
-
-
-/*==========  section  ==========*/
-
-/*==========  section end  ==========*/
-
-
-
-/*==========  section  ==========*/
-
-/*==========  section end  ==========*/
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
 
 
+.text
+  line-height: 36px
+  font-size: 20px
 
-/*==========  section  ==========*/
+  p
+    margin: 0 0 30px
 
-/*==========  section end  ==========*/
+    &:last-child
+      margin: 0
+
+.video-box
+  width: 100%
+  border-radius: 5px
+  position: relative
+  overflow: hidden
+  padding-top: 56.25%
+
+  img, iframe
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6))
+    z-index: 1
+
+.btn-play
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  z-index: 1
+  width: 64px
+  height: 64px
+  background: rgba(217, 217, 217, 0.5)
+  border-radius: 50%
+
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    border:
+      left: 13px solid #FFFFFF
+      top: 10px solid transparent
+      bottom: 10px solid transparent
+
+.upcoming-events
+  margin: 114px 0 173px
+
+.info-event
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 30px 0 auto
+  border: 1.475px solid #C4C4C4
+    radius: 7px
+  text-transform: uppercase
+  padding: 14px 47px
+  font-size: 24px
+
+.info-event-item
+  display: flex
+  align-items: center
+  margin: 0 67px 0 0
+
+  &:last-child
+    margin: 0
+
+  &__icon
+    margin: 0 17px 0 0
+    @include d-flex
+    width: 28px
+    min-width: 28px
+
+.btn-registration
+  max-width: 351px
+  width: 100%
+/*==========  section article end  ==========*/
 
 
 
-/*==========  section  ==========*/
+/*==========  section events-page ==========*/
+.events-page
+  h1
+    margin: 0 0 38px
 
-/*==========  section end  ==========*/
+.datepicker
+  max-width: 650px
+  width: 100%
+  margin: 0 0 0 auto
+
+  .ui-widget.ui-widget-content
+    border: 1.475px solid #C4C4C4
+      radius: 7px
+    width: 100%
+    padding: 35px 30px
+
+.ui-datepicker .ui-datepicker-header
+  background: transparent
+  padding: 0 0 18px
+  border: none
+    bottom: 1.475px solid #B42024
+    radius: 0
+  display: flex
+  align-items: center
+  margin: 0 0 10px
+
+.ui-datepicker .ui-datepicker-title
+  margin: 0
+  width: 100%
+  display: flex
+  align-items: center
+  font-family: $default-font
+
+
+.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year
+  border: none
+    radius: 0
+  height: auto
+  padding: 0 40px
+  text-align: center
+  margin: 0
+  width: fit-content
+  font-size: 20px
+  font-weight: 500
+  text-transform: lowercase
+  font-family: $default-font
+
+.ui-datepicker select.ui-datepicker-month
+  order: 1
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next
+  display: none
+
+.ui-datepicker-calendar
+  font-family: $default-font
+
+.ui-datepicker table
+  font-family: $default-font
+  margin: 0
+
+.ui-datepicker th
+  padding: 16px 5px
+  text-transform: uppercase
+  font-size: 20px
+  font-weight: 500
+  color: #B42024
+  font-family: $default-font
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active
+  text-align: center
+  border: 2px solid transparent
+    radius: 50%
+  width: 44px
+  height: 44px
+  margin: 0 auto
+  color: #3D3D3D
+  font-size: 20px
+  font-weight: 500
+  font-family: $default-font
+  background: transparent
+  @include d-flex
+
+.ui-state-default:hover
+  border-color: #B42024
+
+.ui-state-default.ui-state-active
+  background: #B42024
+  color: #fff
+
+/*==========  section events-page end  ==========*/
 
 
 
-/*==========  section  ==========*/
+/*==========  section support ==========*/
+.support-page
+  margin: 0 0 206px
 
-/*==========  section end  ==========*/
+.support-box
+  margin: 0 0 106px
+  &:last-child
+    margin: 0
+  &__image
+    width: 100%
+    @include d-flex
+    position: relative
+    overflow: hidden
+    border-radius: 5px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+  h3
+    position: relative
+    z-index: 1
+    background: linear-gradient(287.84deg, rgba(180, 32, 36, 0.8) 5.67%, rgba(223, 0, 6, 0.8) 95.38%)
+    border-radius: 5px
+    color: #fff
+    backdrop-filter: blur(15px)
+    margin: 0 0 36px -96px
+    text-transform: uppercase
+    padding: 7px 27px
+    font-size: 40px
+    font-weight: 800
+    max-width: 832px
+    min-height: 116px
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+  .text
+    font-size: 18px
+    line-height: 31px
+    margin: 0 0 44px
+    padding: 0 0 0 37px
+    max-width: 750px
+  .link
+    margin: auto 0 0 37px
+  &__content
+    width: 100%
+    height: 100%
+    display: flex
+    flex-direction: column
+
+
+
+.helper
+  margin: 44px 0 160px
+  h2
+    margin: 0 0 40px
+
+
+.quote
+  border: 2px solid #B7B7B7
+    radius: 10px
+  padding: 44px 50px 44px 67px
+  color: #B42024
+  font-size: 32px
+  line-height: 36px
+
+.text-description
+  margin: 0 auto
+  max-width: 518px
+  width: 100%
+
+/*==========  section support end  ==========*/
+
+
+
+/*==========  section representatives ==========*/
+.representatives
+  margin: 80px 0 140px
+  h2
+    margin: 0 0 44px
+
+.representative-box
+  width: 100%
+  height: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  padding: 19px
+  border: 2px solid #B7B7B7
+    radius: 10px
+  &__image
+    max-width: 167px
+    width: 100%
+    border-radius: 5px
+    overflow: hidden
+    @include d-flex
+    img
+      width: 100%
+  &__content
+    width: calc(100% - 167px)
+    padding: 0 0 0 41px
+    height: 100%
+    display: flex
+    flex-direction: column
+  &__head
+    width: 100%
+    margin: 0 0 22px
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+  &__footer
+    width: 100%
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    font-size: 16px
+    font-weight: 300
+    color: #B42024
+    margin: auto 0 0
+    p
+      margin: 0 auto 0 0
+  .link
+    font-size: 16px
+  .box-text
+    font-size: 14px
+    line-height: 18px
+    margin: 0 0 10px
+  &__tel
+    margin: 0 60px 0 auto
+    color: #545454
+    &:hover
+      color: $accent
+  h4
+    font-weight: bold
+    font-size: 20px
+
+/*==========  section representatives end  ==========*/
+
+
+
+/*==========  section direction ==========*/
+.direction-page
+  margin: 0 0 110px
+
+.direction-box
+  width: 100%
+  line-height: 20px
+  h4
+    margin: 29px 0
+    line-height: 31px
+    font-size: 24px
+    text-transform: uppercase
+    width: 100%
+  &__image
+    width: 100%
+    height: 371px
+    border-radius: 5px
+    overflow: hidden
+    @include d-flex
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+/*==========  section direction end  ==========*/
+
+
+
+/*==========  section about ==========*/
+.about
+  margin: 0 0 53px
+  h1
+    margin: 0 0 30px
+
+.about-image
+  @include d-flex
+  max-width: 670px
+  height: 569px
+  width: 100%
+  border-radius: 5px
+  overflow: hidden
+  margin: 0 0 0 auto
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.function
+  h2
+    margin: 0 0 52px
+
+.function-box
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  border: 2px solid #F2F2F2
+    radius: 5px
+  &__image
+    max-width: 520px
+    height: 425px
+    width: 100%
+    border-radius: 5px
+    overflow: hidden
+    @include d-flex
+    img
+      height: 100%
+      width: 100%
+      object-fit: cover
+  &__text
+    padding: 80px 0 0 50px
+    width: calc(100% - 520px)
+
+.nav-tabs-wrapper
+  width: 100%
+
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+
+.nav-tabs
+  max-width: 490px
+  width: 100%
+  border: none
+  .nav-link
+    border: none
+      radius: 0
+    position: relative
+    margin: 0
+    width: 100%
+    text-transform: uppercase
+    padding: 11px 68px
+    color: #000000
+    font-size: 24px
+    display: flex
+    align-items: center
+    min-height: 84px
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      background: url("../img/tab-figure.svg") no-repeat right center
+        size: 100%
+      height: 100%
+      width: 46px
+      display: none
+    &.active
+      background: #F2F2F2
+      color: #000
+      &:before
+        display: block
+
+.tab-content
+  width: calc(100% - 490px)
+
+.team
+  margin: 96px 0 140px
+
+.team-box
+  display: flex
+  align-items: flex-end
+  position: relative
+  &__photo
+    width: 228px
+    height: 435px
+    overflow: hidden
+    border-radius: 30px
+    position: relative
+    margin: 0 0 0 auto
+    &:before
+      content: ''
+      position: absolute
+      left: -2px
+      bottom: -2px
+      clip-path: polygon(0 0, 0% 100%, 100% 100%)
+      width: 157px
+      height: 157px
+      background: #fff
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__content
+    position: absolute
+    left: 0
+    bottom: 0
+    z-index: 1
+    padding: 0 0 11px
+    h4
+      font-size: 24px
+      text-transform: uppercase
+      max-width: 175px
+  .position
+    color: #B42024
+    margin: 7px 0 0
+    font-size: 16px
+    max-width: 175px
+    width: 100%
+
+.team-slider
+  min-width: 2000px
+  .slide
+    width: 349px
+    margin: 0 78px 0 0
+
+
+/*==========  section about end  ==========*/
+
+
+
+/*==========  section industry-page ==========*/
+.industry-page
+  margin: 0 0 100px
+  h1
+    font-size: 128px
+    font-weight: 200
+    width: 100%
+    strong
+      display: block
+      font-weight: 800
+      margin: 8px 0 0 320px
+
+
+.industry-box
+  margin: -53px 0 0
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  z-index: -1
+  position: relative
+  padding: 0 0 0 85px
+  &__image
+    max-width: 679px
+    width: 100%
+    height: 590px
+    border-radius: 5px
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__content
+    width: calc(100% - 679px)
+    margin: 0 0 0 -35px
+    font-size: 40px
+    line-height: 51px
+    text-transform: uppercase
+
+.industry-section
+  .select-wrapper
+    margin: 0
+    p
+      margin: 0 35px 0 0
+      font-size: 24px
+      max-width: none
+      width: fit-content
+      white-space: nowrap
+  .or
+    margin: 0 57px
+
+.industry-item
+  width: 100%
+  height: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  border: 2px solid #B7B7B7
+    radius: 10px
+  padding: 12px 32px 20px 14px
+  &__image
+    max-width: 123px
+    height: 167px
+    width: 100%
+    border-radius: 5px
+    overflow: hidden
+    @include d-flex
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__content
+    width: calc(100% - 123px)
+    padding: 17px 0 0 21px
+    display: flex
+    flex-direction: column
+  h4
+    text-transform: uppercase
+    font-weight: bold
+    font-size: 20px
+    margin: 0 0 14px
+  .link
+    margin: auto 0 0 auto
+    font-size: 16px
+  .box-text
+    margin: 0 0 30px
+
+.heritage
+  margin: 65px 0 125px
+
+
+/*==========  section industry-page end  ==========*/
 
 
 /*==========  section  ==========*/
