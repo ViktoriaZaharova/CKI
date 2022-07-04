@@ -64,6 +64,12 @@
       -ms-flex-direction: column;
           flex-direction: column; }
 
+.announcement-slider .slick-dots {
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 /*==========  section announcement end  ==========*/
 /*==========  section who-suit  ==========*/
 .btn-details {
@@ -318,6 +324,12 @@
     color: #B7B7B7; }
     .offer-box .link-white:hover .link-icon {
       stroke: #B7B7B7; }
+
+.offers-slider .slick-dots {
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 /*==========  section offers end  ==========*/
 /*==========  section news  ==========*/

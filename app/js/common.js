@@ -81,6 +81,42 @@ $('.who-suit-slider').slick({
     ]
 });
 
+// slick active
+$(window).on('load resize', function() {
+    if ($(window).width() < 992) {
+        $('.announcement-slider:not(.slick-initialized)').slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 1,
+            arrows: false
+        });
+    } else {
+        $(".announcement-slider.slick-initialized").slick("unslick");
+    }
+
+    if ($(window).width() < 768) {
+        $('.offers-slider:not(.slick-initialized)').slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 2,
+            arrows: false,
+            responsive: [
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1,
+                        arrows: false,
+                        dots: true
+                    }
+                }
+            ]
+        });
+    } else {
+        $(".offers-slider.slick-initialized").slick("unslick");
+    }
+});
+// slick active
+
 
 $('.btn-burger').on('click', function () {
    $('.mobile-menu').fadeToggle();
