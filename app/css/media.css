@@ -337,6 +337,16 @@
     font-size: 30px; }
   .events-page h1 {
     margin: 0 0 20px; }
+  .events-slider {
+    min-width: auto; }
+    .events-slider .slide {
+      width: 100%;
+      margin: 0; }
+    .events-slider .slick-dots {
+      margin: 20px auto 0;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
   .datepicker .ui-widget.ui-widget-content {
     padding: 15px; }
   .ui-datepicker th, .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
@@ -393,11 +403,7 @@
     width: 100%;
     max-width: none; }
   .events-slider {
-    margin: 40px 0 0;
-    min-width: auto; }
-    .events-slider .slide {
-      width: 100%;
-      margin: 0; }
+    margin: 40px 0 0; }
   .events-slider-item__title {
     font-size: 22px; }
   .slick-next {
